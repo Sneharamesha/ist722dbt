@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: obt_sales
+    description: >
+      Sales fact table combined with all its related dimension tables 
+      (customer, employee, product, and date). 
+      One row per line item ordered with additive facts for sales analysis.
