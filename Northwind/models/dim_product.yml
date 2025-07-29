@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: "Dimension table for products."
+    columns:
+      - name: productkey
+        description: "Primary key for the product dimension."
+        tests:
+          - unique
+          - not_null
+      - name: productname
+        description: "Name of the product."
+      - name: supplierid
+        description: "Supplier ID for the product."
+      - name: categoryid
+        description: "Category ID for the product."
+      - name: quantityperunit
+        description: "Quantity per unit of the product."
+      - name: unitprice
+        description: "Price per unit."
+      - name: unitsinstock
+        description: "Number of units currently in stock."
+      - name: unitsonorder
+        description: "Number of units currently on order."
+      - name: reorderlevel
+        description: "Minimum quantity before reordering is required."
+      - name: discontinued
+        description: "Indicates if the product is discontinued."
